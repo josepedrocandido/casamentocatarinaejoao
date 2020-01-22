@@ -384,7 +384,8 @@ body {
 h1, h2, h3, h4, h5, h6, p {
   font-family: benton-sans, sans-serif;
   font-style: normal;
-  color: #000; }
+  color: #000;
+  margin: 0; }
 
 p {
   font-weight: 400;
@@ -959,3 +960,32 @@ button a:hover {
 
 .nos {
   background: #FFFDF8; }
+
+.presentation-card {
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  margin: 20px 0px; }
+  .presentation-card h1, .presentation-card p {
+    color: #fff; }
+
+.card-text {
+  width: 50%;
+  text-align: left;
+  padding: 20px 30px; }
+
+.she-card-text {
+  background-color: #F39C91; }
+
+.he-card-text {
+  background-color: #9DC9CB; }
+
+.card-photo {
+  width: 50%;
+  background-size: cover; }
+
+.she-card-photo {
+  background: url("../img/wedding/catarina_child.jpeg") no-repeat; }
+
+.he-card-photo {
+  background: url("../img/wedding/joao_child.jpeg") no-repeat; }
