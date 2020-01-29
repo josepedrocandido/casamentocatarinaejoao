@@ -118,7 +118,6 @@
     <div class="wrapper">
       <h1 class="section-title-black">História</h1>
       <div class="timeline">
-
         <div class="story-event">
           <div class="img-box">
             <img src="./assets/img/wedding/catarina_child.jpeg" alt="">
@@ -130,7 +129,6 @@
               Passado uns anos tornaram-se amigos mas apenas isso, até que numa saída à noite do clube tudo se alterou!</p>
           </div>
         </div>
-
         <div class="story-event">
           <div class="text-box align-left">
             <h1>Pedido de Namoro</h1>
@@ -141,7 +139,6 @@
             <img src="./assets/img/wedding/catarina_child.jpeg" alt="">
           </div>
         </div>
-
         <div class="story-event">
           <div class="img-box">
             <img src="./assets/img/wedding/catarina_child.jpeg" alt="">
@@ -155,9 +152,31 @@
         </div>
       </div>
         <h1 class="section-title-green">(...)</h1>
-
     </div>
   </section>
+
+
+  <section class="countDown">
+    <div class="wrapper count-down-area">
+      <h1 class="section-title-white">Estamos ansiosos por <br><b>este dia!</b></h1>
+      <div class="counter-area">
+        <div class="counter-unity">
+          <h1 id="months"></h1>
+          <h2>Meses</h2>
+        </div>
+        <div class="counter-unity">
+          <h1 id="days"></h1>
+          <h2>Dias</h2>
+        </div>
+        <div class="counter-unity">
+          <h1 id="hours"></h1>
+          <h2>Horas</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Casamento Section -->
   <section id="casamento" class="casamento">
@@ -636,6 +655,44 @@
       e.preventDefault();
     });
   </script>
+
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 17, 2020 11:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+  // Output the result in an element with id="demo"
+  var d = new Date();
+  document.getElementById("months").innerHTML = 6 - (d.getMonth() + 1);
+
+  document.getElementById("days").innerHTML = days;
+
+  document.getElementById("hours").innerHTML = hours;
+
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </body>
 
 </html>

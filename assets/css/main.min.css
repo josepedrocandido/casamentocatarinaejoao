@@ -816,18 +816,34 @@ h1 {
     .store {
       height: 150px; } }
 
-.newsletterBck {
-  padding: 0px;
-  background: url("../img/newsletter.jpg") no-repeat;
+.countDown {
+  background: url("../img/wedding/countDown.png") no-repeat;
   background-size: cover;
   height: 350px;
+  text-align: left; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .countDown {
+      height: 150px; } }
+
+.count-down-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px; }
+
+.counter-area {
+  display: flex; }
+
+.counter-unity {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  @media only screen and (max-width: 680px), (max-height: 414px) {
-    .newsletterBck {
-      height: 150px; } }
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-left: 10px;
+  background-color: #fff; }
 
 button a {
   color: black; }
@@ -1040,7 +1056,6 @@ button a:hover {
   width: 46%;
   height: 300px;
   border-radius: 8px;
-  background-color: blue;
   overflow: hidden; }
 
 .align-left {
