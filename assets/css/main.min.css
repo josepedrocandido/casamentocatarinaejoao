@@ -271,19 +271,20 @@ input[type="reset"],
 input[type="button"],
 input[type="checkbox"] {
   display: inline-block;
-  padding: 6px 39px;
-  color: black;
+  padding: 15px 39px;
+  color: #fff;
   text-align: center;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
-  background-color: white;
+  background-color: #6C8A78;
   border-style: none;
-  border-radius: 100px;
+  border-radius: 8px;
   cursor: pointer;
   box-sizing: border-box;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  margin: 40px 0px; }
   @media only screen and (max-width: 680px) {
     .button,
     button,
@@ -365,7 +366,7 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: transparent; }
 
-.section-title-white, .section-title-black, .landing-title, .section-title-green {
+.section-title-white, .section-title-black, .landing-title, .section-title-green, .she-title, .he-title {
   font-family: amatic-sc,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -384,6 +385,14 @@ body {
 .landing-title {
   color: #fff;
   font-size: 119.2px; }
+
+.she-title {
+  color: #F39C91;
+  font-size: 61.04px; }
+
+.he-title {
+  color: #9DC9CB;
+  font-size: 61.04px; }
 
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: benton-sans, sans-serif;
@@ -856,38 +865,36 @@ button a:hover {
   background-color: #262525;
   text-align: center; }
 
-.contactSection {
-  background: white; }
+.contactos {
+  background: #FFFDF8; }
+  .contactos a {
+    font-weight: 400; }
+  .contactos a:hover {
+    text-decoration: underline;
+    opacity: 1; }
 
-.contacts {
+.contact-cards {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
-  @media only screen and (max-width: 415px) {
-    .contacts {
-      display: block; } }
+  margin: 20px 0px; }
 
-@media only screen and (max-width: 680px), (max-height: 414px) {
-  .item {
-    margin-bottom: 65px; } }
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 47%;
+  background-color: white;
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px; }
 
-@media only screen and (max-height: 414px), (max-width: 900px) and (min-width: 680px) {
-  .item {
-    margin-bottom: 65px;
-    width: 50%; } }
-
-.item a {
-  color: #262525; }
-  @media only screen and (max-width: 680px), (max-height: 414px), (max-width: 768px) {
-    .item a {
-      text-decoration: underline; } }
-
-.item a:hover {
-  text-decoration: underline;
-  transition: 0.3s; }
-
-.contactItem {
-  padding-bottom: 20px; }
+.contact-img-box {
+  margin: 40px;
+  width: 30%;
+  height: 300px;
+  overflow: hidden; }
+  .contact-img-box img {
+    width: 100%; }
 
 .products {
   background: #e2e2e247;
@@ -993,7 +1000,9 @@ button a:hover {
   display: flex;
   height: auto;
   justify-content: space-between;
-  margin: 20px 0px; }
+  margin: 20px 0px;
+  border-radius: 8px;
+  overflow: hidden; }
   .presentation-card h1, .presentation-card p {
     color: #fff; }
 
@@ -1060,3 +1069,30 @@ button a:hover {
 
 .align-left {
   text-align: left; }
+
+.casamento-card {
+  margin: 20px 0px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1); }
+
+.restaurant-img-box {
+  width: 100%;
+  height: 400px;
+  overflow: hidden; }
+  .restaurant-img-box img {
+    width: 100%; }
+
+.restaurant-description {
+  padding: 10px 20px;
+  text-align: left; }
+  .restaurant-description p {
+    text-align: justify; }
+
+.confirmacao {
+  background-color: #6C8A78; }
+  .confirmacao p, .confirmacao h1 {
+    color: #fff; }
+  .confirmacao button {
+    background-color: #fff;
+    color: #333; }
