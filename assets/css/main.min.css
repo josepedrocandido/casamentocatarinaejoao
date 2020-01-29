@@ -330,14 +330,14 @@ input[type="checkbox"] {
   transition: all 0.2s ease; }
 
 a {
-  color: #0074D9;
   text-decoration: none;
   outline: 0;
-  transition: 0.3s; }
+  transition: 0.3s;
+  font-weight: 500; }
 
 a:hover {
   transform: scale(1.1);
-  opacity: 0.8; }
+  opacity: 0.5; }
 
 .company-slogan a {
   color: #fff; }
@@ -365,7 +365,7 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: transparent; }
 
-.section-title-white, .section-title-black, .landing-title {
+.section-title-white, .section-title-black, .landing-title, .section-title-green {
   font-family: amatic-sc,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -377,11 +377,15 @@ body {
 .section-title-black {
   color: #333; }
 
+.section-title-green {
+  color: #6C8A78;
+  font-size: 39.06px; }
+
 .landing-title {
   color: #fff;
   font-size: 119.2px; }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
   font-family: benton-sans, sans-serif;
   font-style: normal;
   color: #000;
@@ -425,12 +429,20 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #262525;
-  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.31);
+  background-color: #fff;
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
   display: none;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   z-index: 1; }
+  .nav-fix-layout a {
+    color: #333;
+    opacity: 0.5; }
+  .nav-fix-layout a:hover {
+    opacity: 1; }
+  .nav-fix-layout li.active a {
+    color: #333;
+    opacity: 1; }
 
 .main-nav-fix {
   justify-content: flex-end; }
@@ -989,3 +1001,47 @@ button a:hover {
 
 .he-card-photo {
   background: url("../img/wedding/joao_child.jpeg") no-repeat; }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #6C8A78;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px; }
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #6C8A78;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: flex-start; }
+
+.story-event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0px; }
+  .story-event p {
+    text-align: justify; }
+
+.text-box {
+  width: 46%; }
+
+.img-box {
+  width: 46%;
+  height: 300px;
+  border-radius: 8px;
+  background-color: blue;
+  overflow: hidden; }
+
+.align-left {
+  text-align: left; }
