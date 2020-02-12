@@ -998,7 +998,7 @@ button a:hover {
 
 .presentation-card {
   display: flex;
-  height: auto;
+  height: 430px;
   justify-content: space-between;
   margin: 20px 0px;
   border-radius: 8px;
@@ -1074,7 +1074,11 @@ button a:hover {
   margin: 20px 0px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+  text-align: left; }
+  .casamento-card button {
+    margin: 0px 20px;
+    margin-bottom: 20px; }
 
 .restaurant-img-box {
   width: 100%;
