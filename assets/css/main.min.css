@@ -271,19 +271,20 @@ input[type="reset"],
 input[type="button"],
 input[type="checkbox"] {
   display: inline-block;
-  padding: 6px 39px;
-  color: black;
+  padding: 15px 39px;
+  color: #fff;
   text-align: center;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
-  background-color: white;
+  background-color: #6C8A78;
   border-style: none;
-  border-radius: 100px;
+  border-radius: 8px;
   cursor: pointer;
   box-sizing: border-box;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  margin: 40px 0px; }
   @media only screen and (max-width: 680px) {
     .button,
     button,
@@ -330,14 +331,14 @@ input[type="checkbox"] {
   transition: all 0.2s ease; }
 
 a {
-  color: #0074D9;
   text-decoration: none;
   outline: 0;
-  transition: 0.3s; }
+  transition: 0.3s;
+  font-weight: 500; }
 
 a:hover {
   transform: scale(1.1);
-  opacity: 0.8; }
+  opacity: 0.5; }
 
 .company-slogan a {
   color: #fff; }
@@ -365,7 +366,7 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: transparent; }
 
-.section-title-white, .section-title-black, .landing-title {
+.section-title-white, .section-title-black, .landing-title, .section-title-green, .she-title, .he-title {
   font-family: amatic-sc,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -377,19 +378,35 @@ body {
 .section-title-black {
   color: #333; }
 
+.section-title-green {
+  color: #6C8A78;
+  font-size: 39.06px; }
+
 .landing-title {
   color: #fff;
   font-size: 119.2px; }
 
-h1, h2, h3, h4, h5, h6, p {
+.she-title {
+  color: #F39C91;
+  font-size: 61.04px; }
+
+.he-title {
+  color: #9DC9CB;
+  font-size: 61.04px; }
+
+h1, h2, h3, h4, h5, h6, p, a {
   font-family: benton-sans, sans-serif;
   font-style: normal;
-  color: #000; }
+  color: #000;
+  margin: 0; }
 
 p {
   font-weight: 400;
   color: #333;
   font-size: 20px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    p {
+      font-size: 16px; } }
 
 h2 {
   font-weight: 400;
@@ -424,12 +441,20 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #262525;
-  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.31);
+  background-color: #fff;
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
   display: none;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   z-index: 1; }
+  .nav-fix-layout a {
+    color: #333;
+    opacity: 0.5; }
+  .nav-fix-layout a:hover {
+    opacity: 1; }
+  .nav-fix-layout li.active a {
+    color: #333;
+    opacity: 1; }
 
 .main-nav-fix {
   justify-content: flex-end; }
@@ -446,13 +471,14 @@ h1 {
 @media only screen and (max-width: 680px), (max-height: 414px) {
   .mobileNavBar {
     display: block;
-    background-color: #262525;
+    background-color: #fff;
     box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.31);
     position: fixed;
     width: 100%;
     height: auto;
     z-index: 4;
-    overflow: auto; }
+    overflow: auto;
+    opacity: 0.98; }
   .logoPadding {
     margin-top: 22px;
     margin-left: 20px; }
@@ -462,12 +488,12 @@ h1 {
     list-style: none;
     height: auto;
     overflow: scroll;
-    background-color: #262525; }
+    background-color: #fff; }
   .mobileNavBar li a {
     display: block;
     padding: 20px 20px;
-    border-top: 1px solid #4D4D4D;
-    color: white;
+    border-top: 1px solid #e3e3e3;
+    color: #333;
     font-size: 16px;
     overflow: scroll; } }
   @media only screen and (max-width: 680px) and (min-width: 500px), only screen and (max-height: 414px) and (min-width: 500px) {
@@ -489,7 +515,7 @@ h1 {
     position: relative;
     user-select: none; }
   .mobileNavBar .menu-icon .navicon {
-    background: white;
+    background: #333;
     display: block;
     height: 2px;
     position: relative;
@@ -497,7 +523,7 @@ h1 {
     width: 18px; }
   .mobileNavBar .menu-icon .navicon:before,
   .mobileNavBar .menu-icon .navicon:after {
-    background: white;
+    background: #333;
     content: '';
     display: block;
     height: 100%;
@@ -803,18 +829,34 @@ h1 {
     .store {
       height: 150px; } }
 
-.newsletterBck {
-  padding: 0px;
-  background: url("../img/newsletter.jpg") no-repeat;
+.countDown {
+  background: url("../img/wedding/countDown.png") no-repeat;
   background-size: cover;
   height: 350px;
+  text-align: left; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .countDown {
+      height: 150px; } }
+
+.count-down-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px; }
+
+.counter-area {
+  display: flex; }
+
+.counter-unity {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  @media only screen and (max-width: 680px), (max-height: 414px) {
-    .newsletterBck {
-      height: 150px; } }
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-left: 10px;
+  background-color: #fff; }
 
 button a {
   color: black; }
@@ -827,38 +869,36 @@ button a:hover {
   background-color: #262525;
   text-align: center; }
 
-.contactSection {
-  background: white; }
+.contactos {
+  background: #fff4d285; }
+  .contactos a {
+    font-weight: 400; }
+  .contactos a:hover {
+    text-decoration: underline;
+    opacity: 1; }
 
-.contacts {
+.contact-cards {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
-  @media only screen and (max-width: 415px) {
-    .contacts {
-      display: block; } }
+  margin: 20px 0px; }
 
-@media only screen and (max-width: 680px), (max-height: 414px) {
-  .item {
-    margin-bottom: 65px; } }
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 47%;
+  background-color: white;
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px; }
 
-@media only screen and (max-height: 414px), (max-width: 900px) and (min-width: 680px) {
-  .item {
-    margin-bottom: 65px;
-    width: 50%; } }
-
-.item a {
-  color: #262525; }
-  @media only screen and (max-width: 680px), (max-height: 414px), (max-width: 768px) {
-    .item a {
-      text-decoration: underline; } }
-
-.item a:hover {
-  text-decoration: underline;
-  transition: 0.3s; }
-
-.contactItem {
-  padding-bottom: 20px; }
+.contact-img-box {
+  margin: 40px;
+  width: 30%;
+  height: 300px;
+  overflow: hidden; }
+  .contact-img-box img {
+    width: 100%; }
 
 .products {
   background: #e2e2e247;
@@ -958,4 +998,124 @@ button a:hover {
         margin-top: 30px; } }
 
 .nos {
-  background: #FFFDF8; }
+  background: #fff4d285; }
+
+.presentation-card {
+  display: flex;
+  height: 430px;
+  justify-content: space-between;
+  margin: 20px 0px;
+  border-radius: 8px;
+  overflow: hidden; }
+  .presentation-card h1, .presentation-card p {
+    color: #fff; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .presentation-card {
+      flex-direction: column; } }
+
+.card-text {
+  width: 50%;
+  text-align: left;
+  padding: 20px 30px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .card-text {
+      width: 100%; } }
+
+.she-card-text {
+  background-color: #F39C91; }
+
+.he-card-text {
+  background-color: #9DC9CB; }
+
+.card-photo {
+  width: 50%;
+  background-size: cover; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .card-photo {
+      display: none; } }
+
+.she-card-photo {
+  background: url("../img/wedding/catarina_child.jpeg") no-repeat; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .she-card-photo {
+      display: none; } }
+
+.he-card-photo {
+  background: url("../img/wedding/joao_child.jpeg") no-repeat; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .he-card-photo {
+      display: none; } }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #6C8A78;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px; }
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #6C8A78;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: flex-start; }
+
+.story-event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0px; }
+  .story-event p {
+    text-align: justify; }
+
+.text-box {
+  width: 46%; }
+
+.img-box {
+  width: 46%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden; }
+
+.align-left {
+  text-align: left; }
+
+.casamento-card {
+  margin: 20px 0px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+  text-align: left; }
+  .casamento-card button {
+    margin: 0px 20px;
+    margin-bottom: 20px; }
+
+.restaurant-img-box {
+  width: 100%;
+  height: 400px;
+  overflow: hidden; }
+  .restaurant-img-box img {
+    width: 100%; }
+
+.restaurant-description {
+  padding: 10px 20px;
+  text-align: left; }
+  .restaurant-description p {
+    text-align: justify; }
+
+.confirmacao {
+  background-color: #6C8A78; }
+  .confirmacao p, .confirmacao h1 {
+    color: #fff; }
+  .confirmacao button {
+    background-color: #fff;
+    color: #333; }
