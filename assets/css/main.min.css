@@ -1009,23 +1009,17 @@ button a:hover {
   overflow: hidden; }
   .presentation-card h1, .presentation-card p {
     color: #fff; }
-<<<<<<< HEAD
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .presentation-card {
       flex-direction: column; } }
-=======
->>>>>>> 7ff62c68e820fc8b5ad368b5389efd32b3bf8683
 
 .card-text {
   width: 50%;
   text-align: left;
   padding: 20px 30px; }
-<<<<<<< HEAD
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .card-text {
       width: 100%; } }
-=======
->>>>>>> 7ff62c68e820fc8b5ad368b5389efd32b3bf8683
 
 .she-card-text {
   background-color: #F39C91; }
@@ -1036,7 +1030,6 @@ button a:hover {
 .card-photo {
   width: 50%;
   background-size: cover; }
-<<<<<<< HEAD
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .card-photo {
       display: none; } }
@@ -1052,14 +1045,6 @@ button a:hover {
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .he-card-photo {
       display: none; } }
-=======
-
-.she-card-photo {
-  background: url("../img/wedding/catarina_child.jpeg") no-repeat; }
-
-.he-card-photo {
-  background: url("../img/wedding/joao_child.jpeg") no-repeat; }
->>>>>>> 7ff62c68e820fc8b5ad368b5389efd32b3bf8683
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
