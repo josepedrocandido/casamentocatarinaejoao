@@ -285,14 +285,14 @@ input[type="checkbox"] {
   box-sizing: border-box;
   transition: all 0.2s ease;
   margin: 40px 0px; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 680px), (max-height: 414px) {
     .button,
     button,
     input[type="submit"],
     input[type="reset"],
     input[type="button"],
     input[type="checkbox"] {
-      padding: 6px 30px; } }
+      font-size: 16px; } }
   .button:hover, .button:active, .button:focus,
   button:hover,
   button:active,
@@ -371,6 +371,9 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 76.29px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .section-title-white, .section-title-black, .landing-title, .section-title-green, .she-title, .he-title {
+      font-size: 39.06px; } }
 
 .section-title-white {
   color: #fff; }
@@ -384,15 +387,25 @@ body {
 
 .landing-title {
   color: #fff;
-  font-size: 119.2px; }
+  font-size: 119.2px;
+  padding-bottom: 20px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .landing-title {
+      font-size: 85px; } }
 
 .she-title {
   color: #F39C91;
   font-size: 61.04px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .she-title {
+      font-size: 39.06px; } }
 
 .he-title {
   color: #9DC9CB;
   font-size: 61.04px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .he-title {
+      font-size: 31.25px; } }
 
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: benton-sans, sans-serif;
@@ -404,16 +417,35 @@ p {
   font-weight: 400;
   color: #333;
   font-size: 20px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    p {
+      font-size: 16px; } }
 
 h2 {
   font-weight: 400;
   color: #333;
   font-size: 25px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    h2 {
+      font-size: 18px; } }
 
 h1 {
   font-weight: 500;
   color: #333;
   font-size: 39.06px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    h1 {
+      font-size: 25px; } }
+
+hr {
+  border: solid #e3e3e3;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 40px 0 40px;
+  height: 0; }
+  @media only screen and (max-height: 414px), (max-width: 900px) and (min-width: 680px) {
+    hr {
+      margin: 0px 0 40px; } }
 
 .main-nav {
   display: flex;
@@ -468,13 +500,14 @@ h1 {
 @media only screen and (max-width: 680px), (max-height: 414px) {
   .mobileNavBar {
     display: block;
-    background-color: #262525;
+    background-color: #fff;
     box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.31);
     position: fixed;
     width: 100%;
     height: auto;
     z-index: 4;
-    overflow: auto; }
+    overflow: auto;
+    opacity: 0.95; }
   .logoPadding {
     margin-top: 22px;
     margin-left: 20px; }
@@ -484,12 +517,12 @@ h1 {
     list-style: none;
     height: auto;
     overflow: scroll;
-    background-color: #262525; }
+    background-color: #fff; }
   .mobileNavBar li a {
     display: block;
     padding: 20px 20px;
-    border-top: 1px solid #4D4D4D;
-    color: white;
+    border-top: 1px solid #e3e3e3;
+    color: #333;
     font-size: 16px;
     overflow: scroll; } }
   @media only screen and (max-width: 680px) and (min-width: 500px), only screen and (max-height: 414px) and (min-width: 500px) {
@@ -511,7 +544,7 @@ h1 {
     position: relative;
     user-select: none; }
   .mobileNavBar .menu-icon .navicon {
-    background: white;
+    background: #333;
     display: block;
     height: 2px;
     position: relative;
@@ -519,7 +552,7 @@ h1 {
     width: 18px; }
   .mobileNavBar .menu-icon .navicon:before,
   .mobileNavBar .menu-icon .navicon:after {
-    background: white;
+    background: #333;
     content: '';
     display: block;
     height: 100%;
@@ -830,18 +863,23 @@ h1 {
   background-size: cover;
   height: 350px;
   text-align: left; }
-  @media only screen and (max-width: 680px), (max-height: 414px) {
+  @media only screen and (max-width: 680px), (max-height: 414px), (max-width: 768px) {
     .countDown {
-      height: 150px; } }
+      height: auto;
+      text-align: center; } }
 
 .count-down-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px; }
+  @media only screen and (max-width: 680px), (max-height: 414px), (max-width: 768px) {
+    .count-down-area {
+      flex-direction: column; } }
 
 .counter-area {
-  display: flex; }
+  display: flex;
+  padding-top: 40px; }
 
 .counter-unity {
   display: flex;
@@ -853,6 +891,10 @@ h1 {
   border-radius: 8px;
   margin-left: 10px;
   background-color: #fff; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .counter-unity {
+      width: 100px;
+      height: 100px; } }
 
 button a {
   color: black; }
@@ -877,6 +919,9 @@ button a:hover {
   display: flex;
   justify-content: space-between;
   margin: 20px 0px; }
+  @media only screen and (max-width: 680px) {
+    .contact-cards {
+      flex-direction: column; } }
 
 .contact-card {
   display: flex;
@@ -887,14 +932,21 @@ button a:hover {
   box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px; }
+  @media only screen and (max-width: 680px) {
+    .contact-card {
+      width: 100%;
+      margin: 20px 0px; } }
 
 .contact-img-box {
   margin: 40px;
   width: 30%;
-  height: 300px;
+  height: 250px;
   overflow: hidden; }
   .contact-img-box img {
     width: 100%; }
+  @media only screen and (max-width: 680px) {
+    .contact-img-box {
+      height: 190px; } }
 
 .products {
   background: #e2e2e247;
@@ -1005,11 +1057,19 @@ button a:hover {
   overflow: hidden; }
   .presentation-card h1, .presentation-card p {
     color: #fff; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .presentation-card {
+      flex-direction: column;
+      height: auto; } }
 
 .card-text {
   width: 50%;
   text-align: left;
   padding: 20px 30px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .card-text {
+      width: 100%;
+      height: 100%; } }
 
 .she-card-text {
   background-color: #F39C91; }
@@ -1020,12 +1080,21 @@ button a:hover {
 .card-photo {
   width: 50%;
   background-size: cover; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .card-photo {
+      display: none; } }
 
 .she-card-photo {
   background: url("../img/wedding/catarina_child.jpeg") no-repeat; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .she-card-photo {
+      display: none; } }
 
 .he-card-photo {
   background: url("../img/wedding/joao_child.jpeg") no-repeat; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .he-card-photo {
+      display: none; } }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -1041,6 +1110,9 @@ button a:hover {
     bottom: 0;
     left: 50%;
     margin-left: -3px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .timeline {
+      display: none; } }
 
 .dot {
   height: 25px;
@@ -1075,7 +1147,7 @@ button a:hover {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
-  text-align: left; }
+  text-align: center; }
   .casamento-card button {
     margin: 0px 20px;
     margin-bottom: 20px; }
@@ -1086,12 +1158,18 @@ button a:hover {
   overflow: hidden; }
   .restaurant-img-box img {
     width: 100%; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .restaurant-img-box {
+      height: 140px; } }
 
 .restaurant-description {
   padding: 10px 20px;
   text-align: left; }
   .restaurant-description p {
     text-align: justify; }
+
+.restaurant-adress-align p {
+  text-align: center; }
 
 .confirmacao {
   background-color: #6C8A78; }

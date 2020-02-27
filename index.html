@@ -41,14 +41,14 @@
 
 
   <nav class="mobileNavBar">
-    <a href="#home" title="Electrovilar home"><img class="logoPadding" src="./assets/img/logoMobileNavBar3.svg" alt="Electrovilar Logo" title="Electrovilar Logo" height="25"></a>
+    <a href="#home" title="Electrovilar home"><img class="logoPadding" src="./assets/img/NavBar.svg" alt="Catarina & João Logo" title="Catarina & João Logo" height="35"></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a onclick="closeMenu()" href="#home" title="home">Home</a></li>
-      <li><a onclick="closeMenu()" href="#sobre" title="sobre">Sobre</a></li>
-      <li><a onclick="closeMenu()" href="#produtos" title="produtos">Produtos</a></li>
-      <li><a onclick="closeMenu()" href="#obras" title="obras">Obras</a></li>
+      <li><a onclick="closeMenu()" href="#nos" title="home">Nós</a></li>
+      <li><a onclick="closeMenu()" href="#historia" title="sobre">História</a></li>
+      <li><a onclick="closeMenu()" href="#casamento" title="produtos">Casamento</a></li>
+      <li><a onclick="closeMenu()" href="#confirmacao" title="obras">Confirmação</a></li>
       <li><a onclick="closeMenu()" href="#contactos" title="contactos">Contactos</a></li>
     </ul>
   </nav>
@@ -193,11 +193,13 @@ Tem um mau em perder que por vezes se torna dificil de lidar, no entanto, não h
         <div class="restaurant-description">
           <h1>Quinta do Coração</h1>
           <h2>Vila Franca de Xira</h2><br>
-          <p>A Quinta do Coração é um espaço moderno, mas de uma envolvência natural centenária, que lhe confere uma atmosfera romântica. Está a escassos quilómetros de Vila Franca de Xira, numa zona privilegiada e onde se pode respirar ar puro e fresco. Com vistas desafogadas para o Tejo e campos de cultivo, esta Quinta foi a opção certa para darmos o nó.</p><br>
-          <p><b>Deixamos aqui a morada para lá chegarem:</b></p>
-          <p>Estrada da Arruda - Vila Franca de Xira 2600-011</p>
-          <p>Coordenadas GPS: N 38º 57’22” W 09º 00’32”</p>
-        </div>
+          <p>A Quinta do Coração é um espaço moderno, mas de uma envolvência natural centenária, que lhe confere uma atmosfera romântica. Está a escassos quilómetros de Vila Franca de Xira, numa zona privilegiada e onde se pode respirar ar puro e fresco. Com vistas desafogadas para o Tejo e campos de cultivo, esta Quinta foi a opção certa para darmos o nó.</p>
+          <hr>
+          <div class="restaurant-adress-align">
+            <p>Estrada da Arruda - Vila Franca de Xira 2600-011</p><br>
+            <p>Coordenadas GPS: N 38º 57’22” W 09º 00’32”</p>
+          </div>
+        </div><br>
         <button type="button" name="button" onclick="window.open('https://goo.gl/maps/Qc27chDBiJPVDvxJA', '_blank'); return false;">Abrir Localização</button>
       </div>
     </div>
@@ -232,225 +234,17 @@ Tem um mau em perder que por vezes se torna dificil de lidar, no entanto, não h
             <img src="./assets/img/wedding/gameiro_contact.png" alt="João Icon" title="João Icon">
           </div>
           <h2><a href="tel:+351912660475 " title="Telefone">+351 912 660 475</a></h2>
-          <h2><a href="mailto:geral.electrovilar@gmail.com" target="_blank" title="Email">joao.gameiro19@gmail.com</a></h2>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Oportunidades Section -->
-  <section id="oportunidades" class="oportunidades">
-    <div class="wrapper">
-      <h2 class="sectionTitle">Oportunidades</h2>
-      <div class="mainProduct">
-        <div class="productDesc">
-          <h3>Massas a Quilo</h3>
-          <h4>Material de Construção</h4>
-        </div>
-      </div>
-      <div class="smallProducts">
-        <div class="smallProduct prod1">
-          <div class="productDesc">
-            <h3 class="smallProductTitle">Tintas</h3>
-            <h4 class="smallProductTag">Material de Construção
-            </h4>
-          </div>
-        </div>
-        <div class="smallProduct prod2">
-          <div class="productDesc">
-            <h3 class="smallProductTitle">Pladur e Acessórios</h3>
-            <h4 class="smallProductTag">Material de Construção
-            </h4>
-          </div>
+          <h2><a href="mailto:joao.gameiro19@gmail.com" target="_blank" title="Email">joao.gameiro19@gmail.com</a></h2>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sobre Nós Section -->
-  <section id="sobre" class="sobre">
-    <div class="wrapper">
-      <h2 class="sectionTitle">Sobre nós...</h2>
-      <div class="services">
-        <div class="item">
-          <div class="productItem">
-            <img src="./assets/img/vendaDeProductos.svg" alt="Venda de Produtos" title="Venda de Produtos" height="170">
-          </div>
-          <h1 class="serviceTextTitle">Venda de Produtos</h1>
-        </div>
-
-        <div class="item">
-          <div class="productItem">
-            <img src="./assets/img/climatizacao.svg" alt="climatizacao" title="climatizacao" height="170">
-          </div>
-          <h1 class="serviceTextTitle">Climatização</h1>
-        </div>
-        <div class="item">
-          <div class="productItem">
-            <img src="./assets/img/canalizacao.svg" alt="canalizacao" title="canalizacao" height="170">
-          </div>
-          <h1 class="serviceTextTitle">Canalização</h1>
-        </div>
-
-        <div class="item">
-          <div class="productItem">
-            <img src="./assets/img/electrecidade.svg" alt="electrecidade" title="electrecidade" height="170">
-          </div>
-          <h1 class="serviceTextTitle">Electricidade</h1>
-        </div>
-      </div>
-      <hr>
-      <p class="sobreText">
-        A Electrovilar é uma empresa do ramo das energias, com sede na
-        fronteira de Portugal com Espanha. Desde início tem desenvolvido
-        actividade ao longo do eixo Guarda / Salamanca, demonstrando desde
-        cedo a sua apetência para o cruzamento de serviços com o mercado
-        internacional, nomeadamente com a Espanha. Esse facto tem sido
-        reforçado com o desenvolvimento crescente das energias renováveis.
-      </p>
-    </div>
-  </section>
 
 
-  <!-- Produtos Section -->
-  <section id="produtos" class="products">
-    <div class="wrapper">
-      <h2 class="sectionTitle Prod">Os Nossos Produtos</h2>
-    </div>
-  </section>
-  <section class="productsPart">
-    <div class="wrapper">
-      <div class="productsImage">
-        <img src="./assets/img/produtos/p1.png" alt="Material de Gás" title="Material de Gás" class="productImg">
-        <img src="./assets/img/produtos/p2.png" alt="Ferramentas" title="Ferramentas" class="productImg">
-        <img src="./assets/img/produtos/p3.png" alt="Extensões Eléctricas" title="Extensões Eléctricas" class="productImg">
-        <img src="./assets/img/produtos/p4.png" alt="Cimento" title="Cimento" class="productImg">
-        <img src="./assets/img/produtos/p5.png" alt="Torneiras" title="Torneiras" class="productImg">
-        <img src="./assets/img/produtos/p6.png" alt="Pavimentos" title="Pavimentos" class="productImg">
-        <img src="./assets/img/produtos/p7.png" alt="Lâmpadas" title="Lâmpadas" class="productImg">
-        <img src="./assets/img/produtos/p8.png" alt="Casas de Banho" title="Casas de Banho" class="productImg">
-        <img src="./assets/img/produtos/p9.png" alt="Material Eléctrico" title="Material Eléctrico" class="productImg">
-      </div>
-    </div>
-  </section>
-
-  <section class="store">
-    <div class="store"></div>
-  </section>
-
-  <!-- Obras Section -->
-  <section id="obras" class="jobs">
-    <div class="wrapper">
-      <h2 class="sectionTitle Prod">Os Nossos Trabalhos</h2>
-    </div>
-  </section>
-
-  <section class="jobsParts">
-    <div class="wrapper">
-      <div class="jobsCards">
-        <!-- Card 1 -->
-        <article class="c-card" id="card1">
-          <header class="c-card__header">
-            <img src="./assets/img/Card1/card1.jpg" class="c-card__image" alt="Parque Solar" title="Parque Solar" />
-          </header>
-          <div class="c-card__body">
-            <h2 class="c-card__title">
-              Parque Solar
-            </h2>
-            <p class="c-card__subtitle">
-              Martim Longo - Alcoutim
-            </p>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="c-card" id="card2">
-          <header class="c-card__header">
-            <img src="./assets/img/Card2/card2.jpg" class="c-card__image" alt="Carrefour Market" title="Carrefour Market" />
-          </header>
-          <div class="c-card__body">
-            <h2 class="c-card__title">
-              Carrefour Market
-            </h2>
-            <p class="c-card__subtitle">
-              Fuentes de Oñoro
-            </p>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="c-card" id="card3">
-          <header class="c-card__header">
-            <img src="./assets/img/Card3/card3.jpg" class="c-card__image" alt="Torre de Iluminação" title="Torre de Iluminação" />
-          </header>
-          <div class="c-card__body">
-            <h2 class="c-card__title">
-              Torre de Iluminação
-            </h2>
-            <p class="c-card__subtitle">
-              Vilar Formoso
-            </p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
 
 
-  <section id="contactos" class="newsletterBck">
-    <div class="newsletter">
-      <h3 class="newsletterText">Subscreva a nossa <b>Newsletter</b></h3>
-      <button type="button" name="button" onclick="window.open('https://mailchi.mp/40ef32bd0d3a/electrovilar', '_blank'); return false;">Subscrever</button>
-    </div>
-  </section>
 
-
-  <!-- Contactos Section -->
-  <section class="contactSection">
-    <div class="wrapper">
-      <h2 class="sectionTitle">Contactos</h2>
-      <div class="contacts">
-        <div class="item">
-          <div class="contactItem">
-            <img src="./assets/img/email.svg" alt="Email" title="Email">
-          </div>
-          <h1 class="contactsTextTitle">Email</h1>
-          <h2 class="contactsTextSubTitle"><a href="mailto:geral.electrovilar@gmail.com" target="_blank" title="Email">geral.electrovilar@gmail.com</a></h2>
-        </div>
-
-        <div class="item">
-          <div class="contactItem">
-            <img src="./assets/img/phone.svg" alt="Telefone" title="Telefone">
-          </div>
-          <h1 class="contactsTextTitle">Telefone</h1>
-          <h2 class="contactsTextSubTitle"><a href="tel:+351271513073" title="Telefone">+351 271 513 073</a></h2>
-        </div>
-        <div class="item">
-          <div class="contactItem">
-            <img src="./assets/img/adress.svg" alt="Morada" title="Morada">
-          </div>
-          <h1 class="contactsTextTitle">Morada</h1>
-          <h2 class="contactsTextSubTitle"><a href="https://goo.gl/maps/VTkWJFLDy2MHR7xf8" target="_blank" title="Mapa">
-              Av. Combatentes da<br>Guerra Colonial, nº 18<br>
-              6355-264 Vilar Formoso
-            </a></h2>
-        </div>
-        <div class="item">
-          <div class="contactItem">
-            <img src="./assets/img/schedule.svg" alt="Horário" title="Horário">
-          </div>
-          <h1 class="contactsTextTitle">Horário</h1>
-          <h2 class="contactsTextSubTitle"><a href="https://goo.gl/maps/VTkWJFLDy2MHR7xf8" target="_blank" title="Horário">
-              Segunda a Sexta | 07h30 - 19h00<br>
-              Sábado | 07h30 - 12h30
-            </a></h2>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="footer">
     <div class="wrapper">
@@ -461,78 +255,6 @@ Tem um mau em perder que por vezes se torna dificil de lidar, no entanto, não h
     </div>
   </section>
 
-
-
-
-
-  <div id="modalc1" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content wrapper">
-      <div class="grid-container">
-        <h2 class="photoTitle">Parque Solar Martim Longo</h2>
-        <!-- <span class="close closeG">&times;</span> -->
-        <a class="prev leftA" onclick="plusSlides(-1)">❮</a>
-        <a class="next rightA" onclick="plusSlides(1)">❯</a>
-
-        <div class="mainImage">
-          <div class="mySlides">
-            <img class="mImage" src="./assets/img/Card1/card1MainImage1.jpg" alt="Parque Solar Martim Longo" title="Parque Solar Martim Longo">
-          </div>
-        </div>
-
-        <div class="mainImage">
-          <div class="mySlides">
-            <img class="mImage" src="./assets/img/Card1/card1MainImage2.jpg" alt="Parque Solar Martim Longo" title="Parque Solar Martim Longo">
-          </div>
-        </div>
-
-        <div class="photosGallery photosGalleryG">
-          <div><img class="demo cursor" src="./assets/img/Card1/card1SmallImage1.jpg" style="height:100%" onclick="currentSlide(1)" alt="Parque Solar Martim Longo" title="Parque Solar Martim Longo"></div>
-          <div><img class="demo cursor" src="./assets/img/Card1/card1SmallImage2.jpg" style="height:100%" onclick="currentSlide(2)" alt="Parque Solar Martim Longo" title="Parque Solar Martim Longo"></div>
-        </div>
-        <button class="closec1 closeG backButton" type="button">Voltar</button>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="modalc2" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content wrapper">
-      <div class="grid-container">
-        <h2 class="photoTitle">Carrefour Market</h2>
-
-        <div class="mainImage">
-          <img class="mImage" src="./assets/img/Card2/card2MainImage1.jpg" alt="Carrefour Market" title="Carrefour Market">
-        </div>
-
-        <div class="photosGallery photosGalleryG">
-          <div><img class="demo cursor" src="./assets/img/Card2/card2SmallImage.jpg" style="height:100%; opacity: 1;" onclick="currentSlide(1)" alt="Carrefour Market" title="Carrefour Market"></div>
-        </div>
-        <button class="closec2 closeG backButton" type="button">Voltar</button>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="modalc3" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content wrapper">
-      <div class="grid-container">
-        <h2 class="photoTitle">Torre de Iluminação</h2>
-
-        <div class="mainImage img-vertical">
-          <img class="" src="./assets/img/Card3/card3MainImage1.jpg" alt="Torre de Iluminação" title="Torre de Iluminação">
-        </div>
-
-        <div class="photosGallery photosGalleryG">
-          <div><img class="demo cursor" src="./assets/img/Card3/card3SmallImage.jpg" style="height:100%; opacity: 1;" onclick="currentSlide(1)" alt="Torre de Iluminação" title="Torre de Iluminação"></div>
-        </div>
-        <button class="closec3 closeG backButton" type="button">Voltar</button>
-
-      </div>
-    </div>
-  </div>
 
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
