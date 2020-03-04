@@ -440,6 +440,14 @@ h1 {
     h1 {
       font-size: 25px; } }
 
+h3 {
+  font-weight: 500;
+  color: #333;
+  font-size: 23px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    h3 {
+      font-size: 19px; } }
+
 hr {
   border: solid #e3e3e3;
   border-width: 1px 0 0;
@@ -849,15 +857,6 @@ hr {
     margin-bottom: 65px;
     width: 50%; } }
 
-.store {
-  padding: 0px;
-  background: url("../img/store.jpg") no-repeat;
-  background-size: cover;
-  height: 350px; }
-  @media only screen and (max-width: 680px), (max-height: 414px) {
-    .store {
-      height: 150px; } }
-
 .countDown {
   background: url("../img/wedding/countDown.png") no-repeat;
   background-size: cover;
@@ -901,6 +900,19 @@ button a {
 
 button a:hover {
   color: black; }
+
+.listaDeCasamento {
+  background: url("../img/wedding/construction.jpg") no-repeat;
+  background-size: cover;
+  height: auto;
+  text-align: center; }
+  .listaDeCasamento button {
+    background-color: #fff;
+    color: #333; }
+  @media only screen and (max-width: 680px), (max-height: 414px), (max-width: 768px) {
+    .listaDeCasamento {
+      height: auto;
+      text-align: center; } }
 
 .footer {
   padding: 40px 0px;
@@ -1202,3 +1214,78 @@ button a:hover {
   .confirmacao button {
     background-color: #fff;
     color: #333; }
+
+.weddingList {
+  background: #fff4d285; }
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0px; }
+  @media only screen and (max-width: 680px) {
+    .list {
+      justify-content: center; } }
+  @media only screen and (max-height: 414px), (max-width: 768px) {
+    .list {
+      justify-content: space-between; } }
+
+.item-list-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px 20px;
+  overflow: hidden; }
+  .item-list-card .image-box {
+    width: 100%;
+    height: 150px;
+    overflow: hidden; }
+    .item-list-card .image-box img {
+      width: 100%;
+      height: 100%; }
+  .item-list-card .text-list-info {
+    padding: 10px 10px; }
+  @media only screen and (max-height: 414px), (max-width: 768px) {
+    .item-list-card {
+      width: 45%;
+      margin: 20px 0px; } }
+  @media only screen and (max-width: 680px) {
+    .item-list-card {
+      width: 100%;
+      margin: 20px 0px; } }
+
+.progress-bar {
+  width: 95%;
+  height: 10px;
+  background: #e2e2e2b5;
+  border-radius: 8px;
+  margin: 10px 0px; }
+
+.complete-bar {
+  height: 10px;
+  background: #6C8A78;
+  border-radius: 8px; }
+
+.bottom-bar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.6);
+  height: 90px;
+  text-align: center; }
+  .bottom-bar button {
+    margin: 0; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .bottom-bar {
+      height: 70px; } }
+
+.sofa {
+  width: 60%; }

@@ -215,7 +215,8 @@ Tem um mau em perder que por vezes se torna dificil de lidar, no entanto, não h
           <hr>
           <div class="restaurant-adress-align">
             <p>Estrada da Arruda - Vila Franca de Xira 2600-011</p><br>
-            <p>Coordenadas GPS: N 38º 57’22” W 09º 00’32”</p>
+            <p>Coordenadas GPS: N 38º 57’22” W 09º 00’32”</p><br>
+            <p>PS: A noiva vai ser muito pontual!</p>
           </div>
         </div><br>
         <button type="button" name="button" onclick="window.open('https://goo.gl/maps/Qc27chDBiJPVDvxJA', '_blank'); return false;">Abrir Localização</button>
@@ -229,7 +230,16 @@ Tem um mau em perder que por vezes se torna dificil de lidar, no entanto, não h
       <h1 class="section-title-white">Confirmação</h1><br>
       <p>Para confirmarem a vossa presença, preencham o formulário, por favor!</p>
       <h1>Até dia 1 de Maio!</h1>
-        <button type="button" name="button" onclick="window.open('https://', '_blank'); return false;">Confirmar Presença</button>
+        <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4qdYScS7VUB8c1Cp9rnfubRAtR4ptoQ3qy70wAHFRCICNiQ/viewform?usp=sf_link', '_blank'); return false;">Confirmar Presença</button>
+    </div>
+  </section>
+
+  <section id="listaDeCasamento" class="listaDeCasamento">
+    <div class="wrapper">
+      <h1 class="section-title-white">Lista de Casamento</h1><br>
+      <p class="footerText">Como estamos a construir a nossa casinha, estes serão alguns dos itens que gostaríamos de ter. Caso queiram contribuir, basta transferirem para o nosso IBAN o montante que quiserem e preencher os campos pedidos.</p>
+      <button type="button" name="button" onclick="window.open('weddingList.html', '_blank'); return false;">Ver Lista</button>
+
     </div>
   </section>
 
@@ -277,92 +287,6 @@ Tem um mau em perder que por vezes se torna dificil de lidar, no entanto, não h
   <script src="./assets/js/app.js"></script>
 
   <script>
-    // Get the modal
-    var modalc1 = document.getElementById("modalc1");
-    var modalc2 = document.getElementById("modalc2");
-    var modalc3 = document.getElementById("modalc3");
-
-    // Get the button that opens the modal
-    var c1 = document.getElementById("card1");
-    var c2 = document.getElementById("card2");
-    var c3 = document.getElementById("card3");
-
-    // Get the <span> element that closes the modal
-    var spanc1 = document.getElementsByClassName("closec1")[0];
-    var spanc2 = document.getElementsByClassName("closec2")[0];
-    var spanc3 = document.getElementsByClassName("closec3")[0];
-
-    // When the user clicks the button, open the modal
-    c1.onclick = function() {
-      modalc1.style.display = "block";
-    }
-    c2.onclick = function() {
-      modalc2.style.display = "block";
-    }
-    c3.onclick = function() {
-      modalc3.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    spanc1.onclick = function() {
-      modalc1.style.display = "none";
-    }
-    spanc2.onclick = function() {
-      modalc2.style.display = "none";
-    }
-    spanc3.onclick = function() {
-      modalc3.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modalc1) {
-        modalc1.style.display = "none";
-      }
-    }
-    window.onclick = function(event) {
-      if (event.target == modalc2) {
-        modalc2.style.display = "none";
-      }
-    }
-    window.onclick = function(event) {
-      if (event.target == modalc3) {
-        modalc3.style.display = "none";
-      }
-    }
-
-    // Function that control slideshow inside modal
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > slides.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = slides.length
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-
     // Function that makes appear Fix Navbar after landing page scroll
     var height = window.innerHeight;
     var element = document.getElementById("fixed-navbar");
