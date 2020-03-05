@@ -1217,6 +1217,24 @@ button a:hover {
 
 .weddingList {
   background: #fff4d285; }
+  .weddingList .nav-fix-layout-list {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    z-index: 1; }
+    .weddingList .nav-fix-layout-list a {
+      color: #333;
+      opacity: 0.5; }
+    .weddingList .nav-fix-layout-list a:hover {
+      opacity: 1; }
+    .weddingList .nav-fix-layout-list li.active a {
+      color: #333;
+      opacity: 1; }
 
 .list {
   display: flex;
@@ -1234,11 +1252,11 @@ button a:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 25%;
+  width: 30%;
   background-color: white;
   box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin: 20px 20px;
+  margin: 20px 0px;
   overflow: hidden; }
   .item-list-card .image-box {
     width: 100%;
@@ -1246,9 +1264,18 @@ button a:hover {
     overflow: hidden; }
     .item-list-card .image-box img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      overflow: hidden; }
   .item-list-card .text-list-info {
     padding: 10px 10px; }
+  .item-list-card hr {
+    margin: 0; }
+  .item-list-card button {
+    margin: 12px 10px;
+    padding: 5px 10px; }
+    @media only screen and (max-width: 680px) {
+      .item-list-card button {
+        padding: 10px 10px; } }
   @media only screen and (max-height: 414px), (max-width: 768px) {
     .item-list-card {
       width: 45%;
@@ -1259,7 +1286,7 @@ button a:hover {
       margin: 20px 0px; } }
 
 .progress-bar {
-  width: 95%;
+  width: 100%;
   height: 10px;
   background: #e2e2e2b5;
   border-radius: 8px;
@@ -1286,6 +1313,3 @@ button a:hover {
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .bottom-bar {
       height: 70px; } }
-
-.sofa {
-  width: 60%; }

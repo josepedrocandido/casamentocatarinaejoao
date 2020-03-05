@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.min.css" />
+  <link rel="stylesheet" href="assets/css/progressBar.css" />
   <link rel="icon" href="./assets/img/.png" sizes="any">
 
   <!-- Primary Meta Tags -->
@@ -38,16 +39,36 @@
 
 <body class="weddingList">
 
-
+  <nav class="nav-fix-layout-list" id="fixed-navbar">
+    <div class="wrapper">
+      <ul id="main-nav" class="main-nav-fix main-nav">
+        <a class="noLeftPadding" href="https://casamentocatarinaejoao.pt/" title="Catarina & Gameiro Menu"><img class="logo-menu" src="./assets/img/NavBar.svg" height="70" alt="Electrovilar Logo" title="Electrovilar Logo"></a>
+        <li><a href="https://casamentocatarinaejoao.pt/" title="Nós Menu">Nós</a></li>
+        <li><a href="https://casamentocatarinaejoao.pt/" title="História Menu">História</a></li>
+        <li><a href="https://casamentocatarinaejoao.pt/" title="Casamento Menu">Casamento</a></li>
+        <li><a href="https://casamentocatarinaejoao.pt/" title="Confirmação Menu">Confirmação</a></li>
+        <li><a href="https://casamentocatarinaejoao.pt/" title="Lista Menu">Lista</a></li>
+        <li><a class="noRightPadding" href="https://casamentocatarinaejoao.pt/" title="Contactos Menu">Contactos</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <nav class="mobileNavBar">
-    <a href="https://casamentocatarinaejoao.pt/" title="Catarina&João home"><img class="logoPadding" src="./assets/img/NavBar.svg" alt="Catarina & João Logo" title="Catarina & João Logo" height="35"></a>
+    <a href="#home" title="Electrovilar home"><img class="logoPadding" src="./assets/img/NavBar.svg" alt="Catarina & João Logo" title="Catarina & João Logo" height="35"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a onclick="closeMenu()" href="https://casamentocatarinaejoao.pt/" title="home">Nós</a></li>
+      <li><a onclick="closeMenu()" href="https://casamentocatarinaejoao.pt/" title="sobre">História</a></li>
+      <li><a onclick="closeMenu()" href="https://casamentocatarinaejoao.pt/" title="produtos">Casamento</a></li>
+      <li><a onclick="closeMenu()" href="https://casamentocatarinaejoao.pt/" title="obras">Confirmação</a></li>
+      <li><a onclick="closeMenu()" href="https://casamentocatarinaejoao.pt/" title="obras">Lista</a></li>
+      <li><a onclick="closeMenu()" href="https://casamentocatarinaejoao.pt/" title="contactos">Contactos</a></li>
+    </ul>
   </nav>
 
 
-  <div class="bottom-bar">
-    <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhVxA8GfVY1JXcQCPAm_Ax8iRT0zXzH1b9TBbdp_Z9CBfh5w/viewform?usp=sf_link', '_blank'); return false;">Contribuir</button>
-  </div>
+
 
   <section id="weddingList" class="">
     <div class="wrapper">
@@ -67,128 +88,94 @@
               </div>
             </div>
           </div>
+          <hr>
+          <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhVxA8GfVY1JXcQCPAm_Ax8iRT0zXzH1b9TBbdp_Z9CBfh5w/viewform?usp=pp_url&entry.783573960=Sofa', '_blank'); return false;">Contribuir</button>
         </div>
 
         <div class="item-list-card">
           <div class="image-box">
-            <img src="./assets/img/wedding/sofa.jpg" alt="">
+            <img src="./assets/img/wedding/aparador.jpg" alt="">
           </div>
           <div class="text-list-info">
-            <h3>Sofá chaiselong Luana<h3>
+            <h3>Aparador Viena Nogueira<h3>
             <p>Hipercentro do móvel</p>
-            <h2>598€</h2>
+            <h2>424€</h2>
             <div class="progress-bar">
-              <div class="complete-bar sofa">
+              <div class="complete-bar aparador">
               </div>
             </div>
           </div>
+          <hr>
+          <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhVxA8GfVY1JXcQCPAm_Ax8iRT0zXzH1b9TBbdp_Z9CBfh5w/viewform?usp=pp_url&entry.783573960=Aparador', '_blank'); return false;">Contribuir</button>
         </div>
 
         <div class="item-list-card">
           <div class="image-box">
-            <img src="./assets/img/wedding/sofa.jpg" alt="">
+            <img src="./assets/img/wedding/mesa.jpg" alt="">
           </div>
           <div class="text-list-info">
-            <h3>Sofá chaiselong Luana<h3>
+            <h3>Mesa extensível Viena Nogueira<h3>
             <p>Hipercentro do móvel</p>
-            <h2>598€</h2>
+            <h2>430€</h2>
             <div class="progress-bar">
-              <div class="complete-bar sofa">
+              <div class="complete-bar mesa">
               </div>
             </div>
           </div>
+          <hr>
+          <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhVxA8GfVY1JXcQCPAm_Ax8iRT0zXzH1b9TBbdp_Z9CBfh5w/viewform?usp=pp_url&entry.783573960=Mesa', '_blank'); return false;">Contribuir</button>
         </div>
 
         <div class="item-list-card">
           <div class="image-box">
-            <img src="./assets/img/wedding/sofa.jpg" alt="">
+            <img src="./assets/img/wedding/bar.jpg" alt="">
           </div>
           <div class="text-list-info">
-            <h3>Sofá chaiselong Luana<h3>
+            <h3>Elemento Bar Viena Nogueira<h3>
             <p>Hipercentro do móvel</p>
-            <h2>598€</h2>
+            <h2>271€</h2>
             <div class="progress-bar">
-              <div class="complete-bar sofa">
+              <div class="complete-bar bar">
               </div>
             </div>
           </div>
+          <hr>
+          <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhVxA8GfVY1JXcQCPAm_Ax8iRT0zXzH1b9TBbdp_Z9CBfh5w/viewform?usp=pp_url&entry.783573960=Elemento+Bar', '_blank'); return false;">Contribuir</button>
         </div>
 
         <div class="item-list-card">
           <div class="image-box">
-            <img src="./assets/img/wedding/sofa.jpg" alt="">
+            <img src="./assets/img/wedding/espelho.jpg" alt="">
           </div>
           <div class="text-list-info">
-            <h3>Sofá chaiselong Luana<h3>
+            <h3>Mural Viena Nogueira<h3>
             <p>Hipercentro do móvel</p>
-            <h2>598€</h2>
+            <h2>98€</h2>
             <div class="progress-bar">
-              <div class="complete-bar sofa">
+              <div class="complete-bar espelho">
               </div>
             </div>
           </div>
+          <hr>
+          <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhVxA8GfVY1JXcQCPAm_Ax8iRT0zXzH1b9TBbdp_Z9CBfh5w/viewform?usp=pp_url&entry.783573960=Mural', '_blank'); return false;">Contribuir</button>
         </div>
 
         <div class="item-list-card">
           <div class="image-box">
-            <img src="./assets/img/wedding/sofa.jpg" alt="">
+            <img src="./assets/img/wedding/espelho.jpg" alt="">
           </div>
           <div class="text-list-info">
-            <h3>Sofá chaiselong Luana<h3>
+            <h3>Mural Viena Nogueira<h3>
             <p>Hipercentro do móvel</p>
-            <h2>598€</h2>
+            <h2>98€</h2>
             <div class="progress-bar">
-              <div class="complete-bar sofa">
+              <div class="complete-bar aparador">
               </div>
             </div>
           </div>
+          <hr>
+          <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhVxA8GfVY1JXcQCPAm_Ax8iRT0zXzH1b9TBbdp_Z9CBfh5w/viewform?usp=pp_url&entry.783573960=Mural', '_blank'); return false;">Contribuir</button>
         </div>
-
-        <div class="item-list-card">
-          <div class="image-box">
-            <img src="./assets/img/wedding/sofa.jpg" alt="">
-          </div>
-          <div class="text-list-info">
-            <h3>Sofá chaiselong Luana<h3>
-            <p>Hipercentro do móvel</p>
-            <h2>598€</h2>
-            <div class="progress-bar">
-              <div class="complete-bar sofa">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="item-list-card">
-          <div class="image-box">
-            <img src="./assets/img/wedding/sofa.jpg" alt="">
-          </div>
-          <div class="text-list-info">
-            <h3>Sofá chaiselong Luana<h3>
-            <p>Hipercentro do móvel</p>
-            <h2>598€</h2>
-            <div class="progress-bar">
-              <div class="complete-bar sofa">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="item-list-card">
-          <div class="image-box">
-            <img src="./assets/img/wedding/sofa.jpg" alt="">
-          </div>
-          <div class="text-list-info">
-            <h3>Sofá chaiselong Luana<h3>
-            <p>Hipercentro do móvel</p>
-            <h2>598€</h2>
-            <div class="progress-bar">
-              <div class="complete-bar sofa">
-              </div>
-            </div>
-          </div>
-        </div>
-
 
     </div>
   </section>
