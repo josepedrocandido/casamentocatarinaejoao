@@ -443,10 +443,10 @@ h1 {
 h3 {
   font-weight: 500;
   color: #333;
-  font-size: 23px; }
+  font-size: 17px; }
   @media only screen and (max-width: 680px), (max-height: 414px) {
     h3 {
-      font-size: 19px; } }
+      font-size: 17px; } }
 
 hr {
   border: solid #e3e3e3;
@@ -1079,7 +1079,7 @@ button a:hover {
 
 .card-text {
   width: 50%;
-  text-align: left;
+  text-align: justify;
   padding: 20px 30px; }
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .card-text {
@@ -1268,6 +1268,8 @@ button a:hover {
       overflow: hidden; }
   .item-list-card .text-list-info {
     padding: 10px 10px; }
+    .item-list-card .text-list-info p {
+      font-size: 16px; }
   .item-list-card hr {
     margin: 0; }
   .item-list-card button {
