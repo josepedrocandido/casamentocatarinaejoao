@@ -466,7 +466,7 @@ hr {
     color: #fff;
     padding: 10px 30px;
     font-size: 20px; }
-  @media only screen and (max-width: 680px), (max-height: 414px) {
+  @media only screen and (max-width: 1024px) {
     .main-nav {
       display: none; } }
 
@@ -505,7 +505,7 @@ hr {
 .mobileNavBar {
   display: none; }
 
-@media only screen and (max-width: 680px), (max-height: 414px) {
+@media only screen and (max-width: 1024px) {
   .mobileNavBar {
     display: block;
     background-color: #fff;
@@ -533,11 +533,11 @@ hr {
     color: #333;
     font-size: 16px;
     overflow: scroll; } }
-  @media only screen and (max-width: 680px) and (min-width: 500px), only screen and (max-height: 414px) and (min-width: 500px) {
+  @media only screen and (max-width: 1024px) and (min-width: 500px) {
     .mobileNavBar li a {
       padding: 10px 20px; } }
 
-@media only screen and (max-width: 680px), (max-height: 414px) {
+@media only screen and (max-width: 1024px) {
   /* menu */
   .mobileNavBar .menu {
     clear: both;
@@ -1335,3 +1335,6 @@ button a:hover {
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .bottom-bar {
       height: 70px; } }
+
+.percentage {
+  text-align: center; }
