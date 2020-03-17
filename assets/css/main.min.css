@@ -742,17 +742,7 @@ hr {
   display: flex;
   flex-direction: column;
   padding: 0px;
-  background-position: center center; }
-  @media only screen and (max-width: 768px) {
-    .home {
-      background: url("../img/wedding/background_tablet.jpg") no-repeat;
-      background-size: cover;
-      background-position: center center; } }
-  @media only screen and (max-width: 375px) {
-    .home {
-      background: url("../img/wedding/background_phone.jpg") no-repeat;
-      background-size: cover;
-      background-position: center center; } }
+  background-position: center; }
 
 .landing-page {
   height: 100%;
