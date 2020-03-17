@@ -741,7 +741,16 @@ hr {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  padding: 0px; }
+  padding: 0px;
+  background-position: center center; }
+  @media only screen and (max-width: 768px) {
+    .home {
+      background: url("../img/wedding/background_tablet.jpg") no-repeat;
+      background-position: center center; } }
+  @media only screen and (max-width: 375px) {
+    .home {
+      background: url("../img/wedding/background_phone.jpg") no-repeat;
+      background-position: center; } }
 
 .landing-page {
   height: 100%;
@@ -858,10 +867,11 @@ hr {
     width: 50%; } }
 
 .countDown {
-  background: url("../img/wedding/countDown.png") no-repeat;
+  background: url("../img/wedding/count_desktop.jpg") no-repeat;
   background-size: cover;
   height: 350px;
-  text-align: left; }
+  text-align: left;
+  background-position: bottom; }
   @media only screen and (max-width: 680px), (max-height: 414px), (max-width: 768px) {
     .countDown {
       height: auto;
@@ -902,10 +912,11 @@ button a:hover {
   color: black; }
 
 .listaDeCasamento {
-  background: url("../img/wedding/construction.jpg") no-repeat;
+  background: url("../img/wedding/lista_desktop.jpg") no-repeat;
   background-size: cover;
   height: auto;
-  text-align: center; }
+  text-align: center;
+  background-position: top; }
   .listaDeCasamento button {
     background-color: #fff;
     color: #333; }
@@ -915,10 +926,11 @@ button a:hover {
       text-align: center; } }
 
 .fotografias {
-  background: url("../img/wedding/photoSection.jpg") no-repeat;
+  background: url("../img/wedding/fotografias.jpg") no-repeat;
   background-size: cover;
   height: auto;
-  text-align: center; }
+  text-align: center;
+  background-position: center; }
   .fotografias h2 {
     color: #fff; }
   .fotografias button {
@@ -1120,13 +1132,13 @@ button a:hover {
       display: none; } }
 
 .she-card-photo {
-  background: url("../img/wedding/catarina_child.jpeg") no-repeat; }
+  background: url("../img/wedding/catarina_child.jpg") no-repeat; }
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .she-card-photo {
       display: none; } }
 
 .he-card-photo {
-  background: url("../img/wedding/joao_child.jpeg") no-repeat; }
+  background: url("../img/wedding/joao_child.jpg") no-repeat; }
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .he-card-photo {
       display: none; } }
@@ -1228,7 +1240,11 @@ button a:hover {
   text-align: center; }
 
 .confirmacao {
-  background-color: #6C8A78; }
+  background: url("../img/wedding/confirmacao.jpg") no-repeat;
+  background-size: cover;
+  height: auto;
+  text-align: center;
+  background-position: center; }
   .confirmacao p, .confirmacao h1 {
     color: #fff; }
   .confirmacao button {
