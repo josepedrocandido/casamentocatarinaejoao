@@ -8,23 +8,24 @@
     <link rel="icon" href="./assets/img/NavBar.svg" sizes="any">
 
     <!-- Primary Meta Tags -->
-    <title>Catarina & João — Casamento</title>
-    <meta name="title" content="Catarina & João — Casamento">
-    <meta name="description" content="Catarina & João — Casamento">
-
+    <title>Catarina & João</title>
+    <meta name="title" content="Catarina & João Wedding">
+    <meta name="description" content="Catarina & João Wedding">
+    <meta name="keywords" content="Electrovilar,Vilar Formoso,Construção,Guarda,Castelo Branco,Ar condicionado">
+    <meta name="author" content="José Cândido">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://casamentocatarinaejoao.pt/">
-    <meta property="og:title" content="Catarina & João — Casamento">
-    <meta property="og:description" content="Catarina & João — Casamento">
-    <meta property="og:image" content="https://casamentocatarinaejoao.pt/assets/img/wedding/background.jpg">
+    <meta property="og:url" content="https://josepedrocandido.github.io/ElectrovilarQA/">
+    <meta property="og:title" content="Catarina & João Wedding">
+    <meta property="og:description" content="Catarina & João Wedding">
+    <meta property="og:image" content="https://i.imgur.com/2WeuL3y.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://casamentocatarinaejoao.pt/">
-    <meta property="twitter:title" content="Catarina & João — Casamento">
-    <meta property="twitter:description" content="Catarina & João — Casamento">
-    <meta property="twitter:image" content="https://casamentocatarinaejoao.pt/assets/img/wedding/background.jpg">
+    <meta property="twitter:url" content="https://josepedrocandido.github.io/ElectrovilarQA/">
+    <meta property="twitter:title" content="Catarina & João Wedding">
+    <meta property="twitter:description" content="Catarina & João Wedding">
+    <meta property="twitter:image" content="https://i.imgur.com/2WeuL3y.png">
 
 </head>
 
@@ -75,7 +76,7 @@
     <nav class="nav-fix-layout" id="fixed-navbar">
         <div class="wrapper">
             <ul id="main-nav" class="main-nav-fix main-nav">
-                <a class="noLeftPadding" href="#home" title="Catarina & João Menu"><img class="logo-menu" src="./assets/img/NavBar.svg" height="70" alt="Catarina & João Logo" title="Catarina & João Logo"></a>
+                <a class="noLeftPadding" href="#home" title="Catarina & João Menu"><img class="logo-menu" src="./assets/img/NavBar.svg" height="70" alt="Electrovilar Logo" title="Electrovilar Logo"></a>
                 <li><a href="#nos" title="Nós Menu">Nós</a></li>
                 <li><a href="#historia" title="História Menu">História</a></li>
                 <li><a href="#casamento" title="Casamento Menu">Casamento</a></li>
@@ -86,20 +87,6 @@
             </ul>
         </div>
     </nav>
-
-    <section class="nova-data">
-      <div class="wrapper">
-        <h1 class="section-title-black">Vai ficar tudo bem :)</h1>
-        <iframe class="youtube-video" src="https://www.youtube.com/embed/u0lmFWHmzKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-        <p class="adiamento-text">O nosso casamento esta marcado para o dia 17/07/2020.
-          No entanto, face à situação em que nos encontramos,
-          a data eventualmente poderá ser alterada.
-          Em junho teremos mais novidades.<br><br>
-          Vai ficar tudo bem.<br><br>
-          Catarina e João, Abril 2020</p>
-      </div>
-    </section>
 
     <!-- Nós Section -->
     <section id="nos" class="nos">
@@ -186,6 +173,10 @@
             <h1 class="section-title-white">Estamos ansiosos por <br><b>este dia!</b></h1>
             <div class="counter-area">
                 <div class="counter-unity">
+                    <h1 id="months"></h1>
+                    <h2>Meses</h2>
+                </div>
+                <div class="counter-unity">
                     <h1 id="days"></h1>
                     <h2>Dias</h2>
                 </div>
@@ -231,8 +222,8 @@
             <h1 class="section-title-white">Confirmação</h1>
             <br>
             <p>Para confirmarem a vossa presença, preencham o formulário, por favor!</p>
-            <h1>Até dia 1 de Junho!</h1>
-            <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4qdYScS7VUB8c1Cp9rnfubRAtR4ptoQ3qy70wAHFRCICNiQ/viewform?usp=pp_url&entry.1605402169=0', '_blank'); return false;">Confirmar Presença</button>
+            <h1>Até dia 1 de Maio!</h1>
+            <button type="button" name="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4qdYScS7VUB8c1Cp9rnfubRAtR4ptoQ3qy70wAHFRCICNiQ/viewform?usp=sf_link', '_blank'); return false;">Confirmar Presença</button>
         </div>
     </section>
 
@@ -401,6 +392,7 @@
 
             // Output the result in an element with id="demo"
             var d = new Date();
+            document.getElementById("months").innerHTML = 6 - (d.getMonth() + 1);
 
             document.getElementById("days").innerHTML = days;
 
