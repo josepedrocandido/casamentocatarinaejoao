@@ -10,8 +10,8 @@
 .conjunto-sala-estar { width: 0%; }
 .frigorífico { width: 0%; }
 .maquina { width: 0%; }
-.secretaria { width: 0%; }
-.cadeira { width: 0%; }
+.secretaria { width: 100%; }
+.cadeira { width: 100%; }
 .bloco-gavetas { width: 0%; }
 .armario { width: 0%; }
 .conjunto-jardim { width: 50%; }
@@ -24,7 +24,7 @@
 .tapete-120 { width: 0%; }
 .toalhas { width: 0%; }
 .candeeiro { width: 0%; }
-.espriguicadeiras  { width: 0%; }
+.espriguicadeiras  { width: 100%; }
 .lua-de-mel-baleias { width: 100%; }
 .lua-de-mel-parasailing { width: 100%; }
 .lua-de-mel-dinghy { width: 20%; }
